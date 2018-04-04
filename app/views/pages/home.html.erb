@@ -1,0 +1,34 @@
+
+<div class="tab-content">
+	<div id="HOME" class="tab-pane fade <%= 'in active' if @active_tab == "HOME" %>">
+		<%= render 'pages/sections/1home' %>
+	</div>
+
+	<div id="ABOUT" class="tab-pane fade <%= 'in active' if @active_tab == "ABOUT" %>">
+		<%= render 'pages/sections/2about' %>
+	</div>
+
+	<div id="SKILLS" class="tab-pane fade <%= 'in active' if @active_tab == "SKILLS" %>">
+		<%= render 'pages/sections/3skills' %>
+	</div>
+
+	<div id="EXPERIENCE" class="tab-pane fade <%= 'in active' if @active_tab == "EXPERIENCE" %>">
+		<%= render 'pages/sections/4experience' %>
+	</div>
+
+	<div id="EDUCATION" class="tab-pane fade <%= 'in active' if @active_tab == "EDUCATION" %>">
+		<%= render 'pages/sections/5education' %>
+	</div>
+
+	<div id="OTHER-INTERESTS" class="tab-pane fade <%= 'in active' if @active_tab == "OTHER-INTERESTS" %>">
+		<%= render 'pages/sections/6other_interests' %>
+	</div>
+
+	<div id="PORTFOLIO" class="tab-pane fade <%= 'in active' if @active_tab == "PORTFOLIO" %>">
+		<%= render 'pages/sections/7portfolio' %>
+	</div>
+
+	<div id="CONTACT" class="tab-pane fade <%= 'in active' if @active_tab == "CONTACT" %>">
+		<%= render 'pages/sections/8contact' %>
+	</div>
+</div>

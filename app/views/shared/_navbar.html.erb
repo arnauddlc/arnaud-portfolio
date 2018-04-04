@@ -1,0 +1,59 @@
+<div class="navbar-arnaud">
+
+
+  <!-- Desktop NavBar -->
+  <div class="hidden-xs hidden-sm">
+  <!-- Logo -->
+    <div class="navbar-arnaud-brand text-center">
+      <%= link_to root_path do %>
+        <h1>Arnaud</h1>
+        <h2>de La Chaise</h2>
+      <% end %>
+    </div>
+      
+      <!-- Avatar with dropdown menu -->
+    <div class="navbar-arnaud-item">
+      <ul class="nav nav-tabs nav-stacked">
+        <li class="<%= 'active' if @active_tab == 'HOME' %>"><a data-toggle="tab" href="#HOME">HOME</a></li>
+        <li class="<%= 'active' if @active_tab == 'ABOUT' %>"><a data-toggle="tab" href="#ABOUT">ABOUT</a></li>
+        <li class="<%= 'active' if @active_tab == 'SKILLS' %>"><a data-toggle="tab" href="#SKILLS">SKILLS</a></li>
+        <li class="<%= 'active' if @active_tab == 'EXPERIENCE' %>"><a data-toggle="tab" href="#EXPERIENCE">EXPERIENCE</a></li>
+        <li class="<%= 'active' if @active_tab == 'EDUCATION' %>"><a data-toggle="tab" href="#EDUCATION">EDUCATION</a></li>
+        <li class="<%= 'active' if @active_tab == 'OTHER-INTERESTS' %>"><a data-toggle="tab" href="#OTHER-INTERESTS">OTHER INTERESTS</a></li>
+        <li class="<%= 'active' if @active_tab == 'PORTFOLIO' %>"><a data-toggle="tab" href="#PORTFOLIO">PORTFOLIO</a></li>
+        <li class="<%= 'active' if @active_tab == 'CONTACT' %>"><a data-toggle="tab" href="#CONTACT">CONTACT</a></li>
+      </ul>
+      <div class="list-inline social-links">
+        <li>1</li>
+        <li>2</li>
+      </div>
+      <div class="copyright">
+        <p>(c) Arnaud de La Chaise - All rights reserved</p>
+      </div>   
+    </div>
+
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+<!--   <div class="navbar-arnaud-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-arnaud-dropdown-menu">
+        < if user_signed_in? %>
+          < if show_export? %>
+            <li class="export"><= link_to "EXPORT", root_path ></li>
+          < end >
+          <li><= link_to "Profile", edit_user_registration_path ></li>
+          <li><= link_to destroy_user_session_path, method: :delete  do >
+            <= t(".sign_out", default: "Log out") >
+          < end >
+          </li>
+        < else >
+          <li><= link_to "Login", new_user_session_path></li>
+        < end %>
+      </ul>
+    </div>
+  </div> -->
+</div>
+
