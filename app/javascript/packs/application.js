@@ -10,6 +10,8 @@
 // console.log('Hello World from Webpacker')
 import 'bootstrap';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
+import { navigateToSection } from '../components/navigation';
 
 
 initUpdateNavbarOnScroll();
+navigateToSection();
