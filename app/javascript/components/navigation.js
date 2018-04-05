@@ -1,9 +1,34 @@
 // function getSectionsPositions() {
-//   const homeY = document.getElementById('1home').getBoundingClientRect().top;
-//   const aboutY = document.getElementById('2about').getBoundingClientRect().top;
-//   console.log(homeY);
-//   console.log(aboutY);
+//   const homeY = document.getElementById('home').getBoundingClientRect().top;
+//   const aboutY = document.getElementById('about').getBoundingClientRect().top;
+//   const skillsY = document.getElementById('skills').getBoundingClientRect().top;
+//   const experienceY = document.getElementById('experience').getBoundingClientRect().top
+//   const educationY = document.getElementById('education').getBoundingClientRect().top;
+//   const otherInterestsY = document.getElementById('other-interests').getBoundingClientRect().top;
+//   const portfolioY = document.getElementById('portfolio').getBoundingClientRect().top;
+//   const contactY = document.getElementById('contact').getBoundingClientRect().top;
+
 // }
+
+function updateActiveSection() {
+	window.addEventListener('scroll', function(){
+		let sectionsToUpdate = document.querySelectorAll('.section-selector');
+		for (let i = 0; i < sectionsToUpdate.length - 1; i++) {
+			let sectionText = sectionsToUpdate[i].innerHTML.toLowerCase().replace(" ","-");
+			let sectionY = document.getElementById(sectionText).getBoundingClientRect().top;
+			let nextSectionText = sectionsToUpdate[i+1].innerHTML.toLowerCase().replace(" ","-");
+			let nextSectionY = document.getElementById(nextSectionText).getBoundingClientRect().top;
+
+			if ( sectionY <= 1 && nextSectionY > 1) {
+				sectionsToUpdate[i].classList.add("active");
+			} else { sectionsToUpdate[i].classList.remove("active"); }
+		}
+		let lastSectionY = document.getElementById("contact").getBoundingClientRect().top;
+		if ( lastSectionY <= 1 ) {
+			sectionsToUpdate[sectionsToUpdate.length - 1].classList.add("active");
+		} else { sectionsToUpdate[sectionsToUpdate.length - 1].classList.remove("active"); }
+	});
+}
 
 function listenToClick() {
 	const sections = document.querySelectorAll('.section-selector');
@@ -22,6 +47,7 @@ function jumpToSection(sectionToNavigateTo) {
 }
 
 function navigateToSection() {
+	updateActiveSection();
 	listenToClick();
 }
 
