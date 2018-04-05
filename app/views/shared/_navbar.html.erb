@@ -47,17 +47,17 @@
       
   <!-- Navigation tabs -->
     <div class="navbar-arnaud-right dropdown">
-      <h3><%= @active_tab%></h3>
+      <h3 id="active-section-mobile">HOME</h3>
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-arnaud-dropdown-menu">
-        <li class="<%= 'active' if @active_tab == 'HOME' %>"><a data-toggle="tab" href="#HOME">HOME</a></li>
-        <li class="<%= 'active' if @active_tab == 'ABOUT' %>"><a data-toggle="tab" href="#ABOUT">ABOUT</a></li>
-        <li class="<%= 'active' if @active_tab == 'SKILLS' %>"><a data-toggle="tab" href="#SKILLS">SKILLS</a></li>
-        <li class="<%= 'active' if @active_tab == 'EXPERIENCE' %>"><a data-toggle="tab" href="#EXPERIENCE">EXPERIENCE</a></li>
-        <li class="<%= 'active' if @active_tab == 'EDUCATION' %>"><a data-toggle="tab" href="#EDUCATION">EDUCATION</a></li>
-        <li class="<%= 'active' if @active_tab == 'OTHER-INTERESTS' %>"><a data-toggle="tab" href="#OTHER-INTERESTS">OTHER INTERESTS</a></li>
-        <li class="<%= 'active' if @active_tab == 'PORTFOLIO' %>"><a data-toggle="tab" href="#PORTFOLIO">PORTFOLIO</a></li>
-        <li class="<%= 'active' if @active_tab == 'CONTACT' %>"><a data-toggle="tab" href="#CONTACT">CONTACT</a></li>
+        <li class="section-selector-mobile">HOME</li>
+        <li class="section-selector-mobile">ABOUT</li>
+        <li class="section-selector-mobile">SKILLS</li>
+        <li class="section-selector-mobile">EXPERIENCE</li>
+        <li class="section-selector-mobile">EDUCATION</li>
+        <li class="section-selector-mobile">OTHER INTERESTS</li>
+        <li class="section-selector-mobile">PORTFOLIO</li>
+        <li class="section-selector-mobile">CONTACT</li>
       </ul>
     </div>
 

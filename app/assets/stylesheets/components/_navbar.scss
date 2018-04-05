@@ -47,7 +47,9 @@
 }
 
 .active {
-  color: red !important;
+  color: $dark-gray !important;
+  background: $light-gray !important;
+  border-radius: 2px;
 }
 
 // .nav-tabs > li > a {
