@@ -1,21 +1,26 @@
 /* Main navbar */
 .navbar-arnaud {
-  display: block;
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: $dark-gray;
-  transition: all 0.3s ease;
-  height: 100vh;
-  width: 300px;
-  padding: 15px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: scroll;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  border-top: 30px solid black;
+  background: $dark-gray;
+  transition: all 0.3s ease;
+  width: 100%;
+  padding: 15px;
   position: relative;
   color: $light-gray;
 
   p {
     font-size: 10px;
   }
+}
+
+.navbar-arnaud-on-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .nav-tabs > ul {
@@ -30,15 +35,16 @@
   }
 }
 
-.nav-tabs > ul > li > a {
-    border-top: 1px solid $light-gray !important;
+.nav-tabs > li > a {
     border-bottom: 1px solid $light-gray !important;
   }
 
 .social-links {
+  text-align: center;
   li {
-    padding: 15px 20px;
+    padding: 15px 25px;
     border: none;
+    font-size: 34px;
   }
 }
 
@@ -47,37 +53,26 @@
   bottom: 0;
 }
 
-// .nav-tabs > li > a {
-//   color: $blue;
-// }
-// .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-//   border-top: 2px solid $blue;
-//   color: $dark-gray;
-// }
 
 /* Logo */
 .navbar-arnaud-brand {
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
-  padding: 10px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  height: 100px;
-  width: 230px;
-  background-color: $green;
-  color: $light-gray;
+  padding: 0px;
+  background-color: transparent;
 
   h1 {
-    font-size: 37px;
-    padding: 0 0 10px 0;
+    font-size: 24px;
+    padding: 0;
     margin: 0 auto;
   }
 
-  h2{
-    font-size: 21px;
-    padding: 0;
-    margin: 0 auto;
+  a {
+    color: $green;
+
+    &:hover {
+      color: white;
+    }
   }
 }
 
@@ -91,15 +86,10 @@
     }
   }
 
-/* User Avatar */
-.navbar-arnaud .avatar {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-}
 
 /* Right section */
 .navbar-arnaud-right {
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -116,10 +106,13 @@
   color: #616668;
   font-size: 14px;
 }
+
 .navbar-arnaud-link:hover {
   color: #da552f;
   text-decoration: none;
 }
+
+
 
 /* Dropdown menu */
 .navbar-arnaud-dropdown-menu {
@@ -150,4 +143,52 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+// Navbar on side for larger screens
+@media (min-width: 992px) {
+.navbar-arnaud {
+  border-top: none;
+  display: block;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: $dark-gray;
+  transition: all 0.3s ease;
+  height: 100vh;
+  width: 300px;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: scroll;
+  position: relative;
+  color: $light-gray;
+  }
+
+.navbar-arnaud-brand {
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: 100px;
+  width: 230px;
+  background-color: $green;
+  color: $light-gray;
+
+  h1 {
+    font-size: 37px;
+    padding: 0 0 10px 0;
+    margin: 0 auto;
+    }
+
+  h2{
+    font-size: 21px;
+    padding: 0;
+    margin: 0 auto;
+    }
+
+  a {
+    color: $light-gray;
+    }
+  } 
 }

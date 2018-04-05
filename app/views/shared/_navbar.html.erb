@@ -3,7 +3,7 @@
 
   <!-- Desktop NavBar -->
   <div class="hidden-xs hidden-sm">
-  <!-- Logo -->
+  <!-- Main Name -->
     <div class="navbar-arnaud-brand text-center">
       <%= link_to root_path do %>
         <h1>Arnaud</h1>
@@ -11,7 +11,7 @@
       <% end %>
     </div>
       
-      <!-- Avatar with dropdown menu -->
+  <!-- Navigation tabs -->
     <div class="navbar-arnaud-item">
       <ul class="nav nav-tabs nav-stacked">
         <li class="<%= 'active' if @active_tab == 'HOME' %>"><a data-toggle="tab" href="#HOME">HOME</a></li>
@@ -24,12 +24,39 @@
         <li class="<%= 'active' if @active_tab == 'CONTACT' %>"><a data-toggle="tab" href="#CONTACT">CONTACT</a></li>
       </ul>
       <div class="list-inline social-links">
-        <li>1</li>
-        <li>2</li>
+        <li><a href="https://www.linkedin.com/in/arnauddelachaise" target="blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/arnauddlc" target="blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
       </div>
       <div class="copyright">
         <p>(c) Arnaud de La Chaise - All rights reserved</p>
       </div>   
+    </div>
+
+  </div>
+
+
+  <!-- Mobile NavBar -->
+  <div class="navbar-arnaud-on-top hidden-md hidden-lg">
+  <!-- Main Name -->
+    <div class="navbar-arnaud-brand text-center">
+      <%= link_to root_path do %>
+        <h1>Arnaud de La Chaise</h1>
+      <% end %>
+    </div>
+      
+  <!-- Navigation tabs -->
+    <div class="navbar-arnaud-right dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-arnaud-dropdown-menu">
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>SKILLS</li>
+        <li>EXPERIENCE</li>
+        <li>EDUCATION</li>
+        <li>OTHER INTERESTS</li>
+        <li>PORTFOLIO</li>
+        <li>CONTACT</li>
+      </ul>
     </div>
 
   </div>
