@@ -5,33 +5,69 @@
 		<div class="card-headlines">
 			<h2>Strategy Manager</h2>
 			<h3>Woolworths Group</h3>
-			<a href="https://www.woolworthsgroup.com.au/" target="blank"><img src="http://via.placeholder.com/200x100"></a>
-			<h3>Sydney, Australia</h3>
-			<h3>April 2017 - December 2017</h3>
+			<a href="https://www.woolworthsgroup.com.au" target="blank"><img src="<%= @page_woolworths.images.favicon %>"></a>
+			<h4>Sydney, Australia</h4>
+			<h4>April 2017 - December 2017</h4>
 		</div>
 		<div class="card-details">
 			<p>Contractor within the Corporate Strategy team.</p>
 			<p>Involved in an important project to review product ranges and COGS (Cost Of Goods Sold) in Woolworths supermarkets. Led and facilitated the review process across 6 different categories within Groceries and General Merchandise.</p>
 		</div>
 		<div class="card-website">
-			<p>Nothing yet</p>
+			<div class="card-website-title">Corporate website</div>
+			<img src="<%= @page_woolworths.meta['og:image'] %>" alt=""> 
+			<h4><%= @page_woolworths.meta['og:title'] %></h4>
+			<p><%= @page_woolworths.meta['description'] %></p>
 		</div>
 	</div>
 
 	<div class="element-card">
 		<div class="card-headlines">
-			<h2>Strategy Manager</h2>
-			<h3>Woolworths Group</h3>
-			<a href="https://www.woolworthsgroup.com.au/" target="blank"><img src="http://via.placeholder.com/200x100"></a>
-			<h3>Sydney, Australia</h3>
-			<h3>April 2017 - December 2017</h3>
+			<h2>Senior Industrial Controller</h2>
+			<h3>Pernod Ricard (Havana Club)</h3>
+			<a href="https://www.pernod-ricard.com/en" target="blank"><img src="<%= @page_pernodricard.images.favicon %>"></a>
+			<h4>Havana, Cuba</h4>
+			<h4>September 2015 - January 2017</h4>
 		</div>
 		<div class="card-details">
-			<p>Contractor within the Corporate Strategy team.</p>
-			<p>Involved in an important project to review product ranges and COGS (Cost Of Goods Sold) in Woolworths supermarkets. Led and facilitated the review process across 6 different categories within Groceries and General Merchandise.</p>
+			<p>Worked directly with the Finance Director and the Industrial Director, made the link between the Finance and Operations of Havana Club International, Joint Venture of Pernod Ricard and the Cuban State.</p>
+			<p>Worked included in Finance:</p>
+			<ul>
+				<li>Delivering the financial analysis on key development projects...</li>
+				<li>etc</li>
+				<li>etc</li>
+			</ul>
 		</div>
 		<div class="card-website">
-			<p>Nothing yet</p>
+			<div class="card-website-title">Corporate website</div>
+			<img src="<%= @page_pernodricard.images.best %>" alt=""> 
+			<h4><%= @page_pernodricard.title %></h4>
+			<p><%= @page_pernodricard.description %></p>
+		</div>
+	</div>
+
+	<div class="element-card">
+		<div class="card-headlines">
+			<h2>Management and Strategy Consultant</h2>
+			<h3>Schlumberger Business Consulting</h3>
+			<a href="https://www.slb.com" target="blank"><img src="<%= @page_sbc.images.favicon %>"></a>
+			<h4>London, UK || Paris, France</h4>
+			<h4>January 2012 - August 2015</h4>
+		</div>
+		<div class="card-details">
+			<p>Worked as a consultant for the management and strategy consulting arm of Schlumberger, leader in Oil and Gas services. Work included (but not limited to):</p>
+			<ul>
+				<li>[France] Optimisation of the supply chain...</li>
+				<li>[Argentina] xxx </li>
+				<li>etc</li>
+			</ul>
+			<p><em>Note: Schlumberger Business Consulting has been bought by Accenture in 2016.</em></p>
+		</div>
+		<div class="card-website">
+			<div class="card-website-title">Corporate website</div>
+			<img src="<%= @page_sbc.images.best %>" alt=""> 
+			<h4><%= @page_sbc.title %></h4>
+			<p><%= @page_sbc.description %></p>
 		</div>
 	</div>
 </div>
