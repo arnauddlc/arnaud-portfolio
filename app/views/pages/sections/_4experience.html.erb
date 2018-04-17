@@ -5,7 +5,7 @@
 		<div class="card-headlines">
 			<h2>Strategy Manager</h2>
 			<h3>Woolworths Group</h3>
-			<a href="https://www.woolworthsgroup.com.au" target="blank"><img src="<%= @page_woolworths.images.favicon %>"></a>
+			<a href="https://www.woolworthsgroup.com.au" target="blank"><img src=""></a>
 			<h4>Sydney, Australia</h4>
 			<h4>April 2017 - December 2017</h4>
 		</div>
@@ -13,11 +13,10 @@
 			<p>Contractor within the Corporate Strategy team.</p>
 			<p>Involved in an important project to review product ranges and COGS (Cost Of Goods Sold) in Woolworths supermarkets. Led and facilitated the review process across 6 different categories within Groceries and General Merchandise.</p>
 		</div>
-		<div class="card-website">
+		<div class="card-website" id="woolworths">
 			<div class="card-website-title">Corporate website</div>
-			<img src="<%= @page_woolworths.meta['og:image'] %>" alt=""> 
-			<h4><%= @page_woolworths.meta['og:title'] %></h4>
-			<p><%= @page_woolworths.meta['description'] %></p>
+			<p class="loading">Loading...</p>
+			<%= render 'pages/sections/corporate_website', url: "https://www.woolworthsgroup.com.au", name: "woolworths" %>
 		</div>
 	</div>
 
@@ -25,7 +24,7 @@
 		<div class="card-headlines">
 			<h2>Senior Industrial Controller</h2>
 			<h3>Pernod Ricard (Havana Club)</h3>
-			<a href="https://www.pernod-ricard.com/en" target="blank"><img src="<%= @page_pernodricard.images.favicon %>"></a>
+			<a href="https://www.pernod-ricard.com/en" target="blank"><img src=""></a>
 			<h4>Havana, Cuba</h4>
 			<h4>September 2015 - January 2017</h4>
 		</div>
@@ -38,11 +37,10 @@
 				<li>etc</li>
 			</ul>
 		</div>
-		<div class="card-website">
+		<div class="card-website" id="pernodricard">
 			<div class="card-website-title">Corporate website</div>
-			<img src="<%= @page_pernodricard.images.best %>" alt=""> 
-			<h4><%= @page_pernodricard.title %></h4>
-			<p><%= @page_pernodricard.description %></p>
+			<p class="loading">Loading...</p>
+			<%= render 'pages/sections/corporate_website', url: "https://havana-club.com/en-ww/", name: "pernodricard" %>
 		</div>
 	</div>
 
@@ -50,7 +48,7 @@
 		<div class="card-headlines">
 			<h2>Management and Strategy Consultant</h2>
 			<h3>Schlumberger Business Consulting</h3>
-			<a href="https://www.slb.com" target="blank"><img src="<%= @page_sbc.images.favicon %>"></a>
+			<a href="https://www.slb.com" target="blank"><img src=""></a>
 			<h4>London, UK || Paris, France</h4>
 			<h4>January 2012 - August 2015</h4>
 		</div>
@@ -63,11 +61,10 @@
 			</ul>
 			<p><em>Note: Schlumberger Business Consulting has been bought by Accenture in 2016.</em></p>
 		</div>
-		<div class="card-website">
+		<div class="card-website" id="schlumberger">
 			<div class="card-website-title">Corporate website</div>
-			<img src="<%= @page_sbc.images.best %>" alt=""> 
-			<h4><%= @page_sbc.title %></h4>
-			<p><%= @page_sbc.description %></p>
+			<p class="loading">Loading...</p>
+			<%= render 'pages/sections/corporate_website', url: "https://www.slb.com/", name: "schlumberger" %>
 		</div>
 	</div>
 </div>
