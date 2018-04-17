@@ -2,11 +2,11 @@ class PagesController < ApplicationController
   def home
   	@active_tab = "HOME"
   	@cache = ActiveSupport::Cache.lookup_store(:file_store, '/tmp/cache')
-    load_urls
   end
 
   def website
     @name = params[:name]
+    @cache = ActiveSupport::Cache.lookup_store(:file_store, '/tmp/cache')
     load_urls
     @urls.each { |url| @url = url[1] if url[0] == @name }
     respond_to do |format|

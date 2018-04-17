@@ -13,11 +13,12 @@
 			<p>Contractor within the Corporate Strategy team.</p>
 			<p>Involved in an important project to review product ranges and COGS (Cost Of Goods Sold) in Woolworths supermarkets. Led and facilitated the review process across 6 different categories within Groceries and General Merchandise.</p>
 		</div>
+		<%= link_to website_path(name: "woolworths"), remote: true do %>
 		<div class="card-website" id="woolworths" data-url="https://www.woolworthsgroup.com.au">
 			<div class="card-website-title">Corporate website</div>
-			<p class="loading">Loading...</p>
-			<%= link_to website_path(name: "woolworths"), remote: true %>
+			<p class="loading">Click to load data</p>
 		</div>
+		<% end %>
 	</div>
 
 	<div class="element-card">
@@ -39,7 +40,7 @@
 		</div>
 		<div class="card-website" id="pernodricard" data-url="https://havana-club.com/en-ww/">
 			<div class="card-website-title">Corporate website</div>
-			<p class="loading">Loading...</p>
+			<p class="loading">Click to load data</p>
 		<!-- <= render 'pages/sections/corporate_website', url: "https://havana-club.com/en-ww/", name: "pernodricard" %> -->
 		</div>
 	</div>
@@ -63,7 +64,7 @@
 		</div>
 		<div class="card-website" id="schlumberger" data-url="https://www.slb.com/">
 			<div class="card-website-title">Corporate website</div>
-			<p class="loading">Loading...</p>
+			<p class="loading">Click to load data</p>
 			<!-- <= render 'pages/sections/corporate_website', url: "https://www.slb.com/", name: "schlumberger" %> -->
 		</div>
 	</div>
