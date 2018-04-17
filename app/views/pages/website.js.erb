@@ -1,0 +1,6 @@
+console.log("Website file message");
+
+var area = document.getElementById("<%= j @name %>");
+
+area.insertAdjacentHTML("beforeend", "<%= j render 'show_website', url: @url %>");
+area.querySelector(".loading").remove();
