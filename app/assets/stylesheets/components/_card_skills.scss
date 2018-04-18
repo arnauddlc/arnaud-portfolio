@@ -1,0 +1,27 @@
+.card-skill {
+	padding: 5px;
+
+	.content-skill{
+		background-color: $dark-gray-transparent;
+		border-radius: 3px;
+		display: block;
+		padding: 10px;
+		color: $light-gray;
+		opacity: 0.9;
+
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+	h2 {
+		margin-top: 0;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	p {
+		margin-bottom: 0;
+		font-size: 16px;
+	}
+}

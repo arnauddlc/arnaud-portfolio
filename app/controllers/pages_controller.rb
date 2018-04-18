@@ -32,10 +32,13 @@ class PagesController < ApplicationController
       ["woolworths", "https://www.woolworthsgroup.com.au"],
       ["pernodricard", "https://havana-club.com/en-ww/"],
       ["schlumberger", "https://www.slb.com/"],
+      ["vinci", "http://www.vinciconstruction.co.uk/"],
       # EDUCATION
       ["polytechnique", "http://www.polytechnique.edu/en"],
       ["lse", "http://www.lse.ac.uk/"],
-      ["jbsay", "http://lyc-jb-say.scola.ac-paris.fr/"]
+      ["jbsay", "http://lyc-jb-say.scola.ac-paris.fr/"],
+      # OTHER INTERESTS
+      ["lewagon", "https://www.lewagon.com"],
     ]
   end
 end
