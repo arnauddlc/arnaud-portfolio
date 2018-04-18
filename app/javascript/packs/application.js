@@ -11,6 +11,8 @@
 import 'bootstrap';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 import { navigateToSection } from '../components/navigation';
+import { indicateLoading } from '../components/loading_website';
 
 initUpdateNavbarOnScroll();
 navigateToSection();
+indicateLoading();

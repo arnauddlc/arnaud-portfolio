@@ -1,16 +1,19 @@
 // Specific CSS for your home-page
 body {
 	display: block;
+	color: $light-gray;
 }
 
 .content {
 	display: block !important;
 	flex-grow: 1;
+	background: $dark-gray;
 }
 
 .container {
 	h1 {
 	padding-top: 80px !important;
+	border-bottom: 3px solid $light-gray;
 	}
 }
 
@@ -58,7 +61,7 @@ body {
 	.container {
 		width: 95% !important;
 		h1 {
-			padding-top: 0 !important;
+			padding-top: 30px !important;
 		}
 	}
 }
