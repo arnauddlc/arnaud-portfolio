@@ -4,11 +4,20 @@ class PagesController < ApplicationController
   	@cache = ActiveSupport::Cache.lookup_store(:file_store, '/tmp/cache')
   end
 
-  def website
-    @name = params[:name]
+  def websitesall
     @cache = ActiveSupport::Cache.lookup_store(:file_store, '/tmp/cache')
     load_urls
-    @urls.each { |url| @url = url[1] if url[0] == @name }
+    respond_to do |format|
+        format.html
+        format.js
+    end
+  end
+
+  def website
+    @name = params[:name]
+    load_urls
+    @urls.each { |element| @url = element[1] if element[0] == @name }
+    @cache = ActiveSupport::Cache.lookup_store(:file_store, '/tmp/cache')
     respond_to do |format|
         format.html
         format.js

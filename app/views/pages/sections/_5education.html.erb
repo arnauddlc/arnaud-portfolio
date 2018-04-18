@@ -15,7 +15,9 @@
 		</div>
 		<div class="card-website" id="polytechnique" data-url="http://www.polytechnique.edu/en">
 			<div class="card-website-title">Official website</div>
-			<p class="loading">Loading...</p>
+			<%= link_to website_path(name: "polytechnique"), remote: true do %>
+				<div class="loading btn btn-primary">Click to load data</div>
+			<% end  %>
 			<!-- <= render 'pages/sections/corporate_website', url: "http://www.polytechnique.edu/en", name: "polytechnique" %> -->
 		</div>
 	</div>
@@ -34,7 +36,9 @@
 		</div>
 		<div class="card-website" id="lse" data-url="http://www.lse.ac.uk/">
 			<div class="card-website-title">Official website</div>
-			<p class="loading">Loading...</p>
+			<%= link_to website_path(name: "lse"), remote: true do %>
+				<div class="loading btn btn-primary">Click to load data</div>
+			<% end  %>
 			<!-- <= render 'pages/sections/corporate_website', url: "http://www.lse.ac.uk/", name: "lse" %> -->
 		</div>
 	</div>
@@ -54,7 +58,9 @@
 		</div>
 		<div class="card-website" id="jbsay" data-url="http://lyc-jb-say.scola.ac-paris.fr/">
 			<div class="card-website-title">Official website</div>
-			<p class="loading">Loading...</p>
+			<%= link_to website_path(name: "jbsay"), remote: true do %>
+				<div class="loading btn btn-primary">Click to load data</div>
+			<% end  %>
 			<!-- <= render 'pages/sections/corporate_website', url: "http://lyc-jb-say.scola.ac-paris.fr/", name: "jbsay" %> -->
 		</div>
 	</div>

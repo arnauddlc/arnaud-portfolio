@@ -15,9 +15,9 @@
 	<br>
 	<br>
 	<br>
-	<%= link_to "My woolworths page", website_path(name: "woolworths"), remote: true  %>
-	<%= link_to "My pernod page", website_path(name: "pernodricard"), remote: true  %>
-	<div id="test"></div>
+	<%= link_to websitesall_path, remote: true do %>
+		<div class="btn btn-primary">Load all external content</div>
+	<% end %>
 	<br>
 	<br>
 	<br>

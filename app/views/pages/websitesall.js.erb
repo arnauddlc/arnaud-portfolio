@@ -1,0 +1,11 @@
+
+<% @urls.each do |element|
+	name = element[0]
+	url = element[1] %>
+
+	var area = document.getElementById("<%= j name %>");
+
+	area.insertAdjacentHTML("beforeend", "<%= j render 'show_website', url: url %>");
+	area.querySelector(".loading").remove();
+
+<% end %>

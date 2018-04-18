@@ -1,4 +1,6 @@
 <% page = MetaInspector.new(url, :connection_timeout => 10, :read_timeout => 5, :retries => 2, faraday_http_cache: { store: @cache }) %>
-<img src="<%= page.images.best %>" alt="">
-<h4><%= page.meta['og:title'] %></h4>
+<%= link_to url, target: "_blank" do %>
+	<img src="<%= page.images.best %>" class="text-center" alt="">
+<% end %>
+<h4 class="text-center"><%= page.meta['og:title'] %></h4>
 <p><%= page.meta['description'] %></p>
