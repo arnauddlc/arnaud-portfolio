@@ -13,10 +13,11 @@
 			<p>Contractor within the Corporate Strategy team.</p>
 			<p>Involved in an important project to review product ranges and COGS (Cost Of Goods Sold) in Woolworths supermarkets. Led and facilitated the review process across 6 different categories within Groceries and General Merchandise.</p>
 		</div>
-		<div class="card-website" id="woolworths">
+		<div class="card-website" id="woolworths" data-url="https://www.woolworthsgroup.com.au">
 			<div class="card-website-title">Corporate website</div>
-			<p class="loading">Loading...</p>
-			<%= render 'pages/sections/corporate_website', url: "https://www.woolworthsgroup.com.au", name: "woolworths" %>
+			<%= link_to website_path(name: "woolworths"), remote: true do %>
+				<div class="loading btn btn-primary">Click to load data</div>
+			<% end  %>
 		</div>
 	</div>
 
@@ -37,10 +38,12 @@
 				<li>etc</li>
 			</ul>
 		</div>
-		<div class="card-website" id="pernodricard">
+		<div class="card-website" id="pernodricard" data-url="https://havana-club.com/en-ww/">
 			<div class="card-website-title">Corporate website</div>
-			<p class="loading">Loading...</p>
-			<%= render 'pages/sections/corporate_website', url: "https://havana-club.com/en-ww/", name: "pernodricard" %>
+			<%= link_to website_path(name: "pernodricard"), remote: true do %>
+				<div class="loading btn btn-primary">Click to load data</div>
+			<% end  %>
+		<!-- <= render 'pages/sections/corporate_website', url: "https://havana-club.com/en-ww/", name: "pernodricard" %> -->
 		</div>
 	</div>
 
@@ -61,10 +64,12 @@
 			</ul>
 			<p><em>Note: Schlumberger Business Consulting has been bought by Accenture in 2016.</em></p>
 		</div>
-		<div class="card-website" id="schlumberger">
+		<div class="card-website" id="schlumberger" data-url="https://www.slb.com/">
 			<div class="card-website-title">Corporate website</div>
-			<p class="loading">Loading...</p>
-			<%= render 'pages/sections/corporate_website', url: "https://www.slb.com/", name: "schlumberger" %>
+			<%= link_to website_path(name: "schlumberger"), remote: true do %>
+				<div class="loading btn btn-primary">Click to load data</div>
+			<% end  %>
+			<!-- <= render 'pages/sections/corporate_website', url: "https://www.slb.com/", name: "schlumberger" %> -->
 		</div>
 	</div>
 </div>
