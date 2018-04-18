@@ -5,7 +5,9 @@
 		<div class="card-headlines">
 			<h2>Strategy Manager</h2>
 			<h3>Woolworths Group</h3>
-			<a href="https://www.woolworthsgroup.com.au" target="blank"><img src=""></a>
+			<div class="corporate_logo">
+				<a href="https://www.www.woolworthsgroup.com.au" target="blank"><%= image_tag("woolworths.png") %></a>
+			</div>
 			<h4>Sydney, Australia</h4>
 			<h4>April 2017 - December 2017</h4>
 		</div>
@@ -16,7 +18,7 @@
 		<div class="card-website" id="woolworths" data-url="https://www.woolworthsgroup.com.au">
 			<div class="card-website-title">Corporate website</div>
 			<%= link_to website_path(name: "woolworths"), remote: true do %>
-				<div class="loading btn btn-primary">Click to load data</div>
+				<div class="loading btn btn-secondary">Click to load data</div>
 			<% end  %>
 		</div>
 	</div>
@@ -25,7 +27,9 @@
 		<div class="card-headlines">
 			<h2>Senior Industrial Controller</h2>
 			<h3>Pernod Ricard (Havana Club)</h3>
-			<a href="https://www.pernod-ricard.com/en" target="blank"><img src=""></a>
+			<div class="corporate_logo">
+				<a href="https://www.pernod-ricard.com/en" target="blank"><%= image_tag("prhci.png") %></a>
+			</div>
 			<h4>Havana, Cuba</h4>
 			<h4>September 2015 - January 2017</h4>
 		</div>
@@ -41,7 +45,7 @@
 		<div class="card-website" id="pernodricard" data-url="https://havana-club.com/en-ww/">
 			<div class="card-website-title">Corporate website</div>
 			<%= link_to website_path(name: "pernodricard"), remote: true do %>
-				<div class="loading btn btn-primary">Click to load data</div>
+				<div class="loading btn btn-secondary">Click to load data</div>
 			<% end  %>
 		<!-- <= render 'pages/sections/corporate_website', url: "https://havana-club.com/en-ww/", name: "pernodricard" %> -->
 		</div>
@@ -51,7 +55,9 @@
 		<div class="card-headlines">
 			<h2>Management and Strategy Consultant</h2>
 			<h3>Schlumberger Business Consulting</h3>
-			<a href="https://www.slb.com" target="blank"><img src=""></a>
+			<div class="corporate_logo">
+				<a href="https://www.slb.com" target="blank"><%= image_tag("sbcwhite.JPG") %></a>
+			</div>
 			<h4>London, UK || Paris, France</h4>
 			<h4>January 2012 - August 2015</h4>
 		</div>
@@ -67,7 +73,7 @@
 		<div class="card-website" id="schlumberger" data-url="https://www.slb.com/">
 			<div class="card-website-title">Corporate website</div>
 			<%= link_to website_path(name: "schlumberger"), remote: true do %>
-				<div class="loading btn btn-primary">Click to load data</div>
+				<div class="loading btn btn-secondary">Click to load data</div>
 			<% end  %>
 			<!-- <= render 'pages/sections/corporate_website', url: "https://www.slb.com/", name: "schlumberger" %> -->
 		</div>

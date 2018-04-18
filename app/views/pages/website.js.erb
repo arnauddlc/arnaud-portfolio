@@ -1,4 +1,5 @@
 var area = document.getElementById("<%= j @name %>");
+console.log(area.querySelector(".loading"));
 
 area.insertAdjacentHTML("beforeend", "<%= j render 'show_website', url: @url %>");
 area.querySelector(".loading").remove();

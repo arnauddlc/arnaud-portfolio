@@ -175,14 +175,16 @@
 // Transparency options when scrolling
 .navbar-arnaud {
   background-color: transparent;
-  transition: 0.5s background-color ease;
+  transition: all 1s ease;
   box-shadow: none;
 }
 
 .navbar-arnaud-plain {
   background-color: $dark-gray;
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  box-shadow: none;
   border-top: 30px solid black;
+  border-bottom: 1px solid $light-gray;
+  opacity: 0.94;
 }
 
 
@@ -193,7 +195,7 @@
   flex-shrink: 0;
   display: block;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: $dark-gray;
+  background: black;
   transition: all 0.3s ease;
   height: 100%;
   width: 30%;
