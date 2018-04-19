@@ -1,0 +1,14 @@
+<div class="container">
+	<h1>contact</h1>
+	<p>Fill the form to send me an email</p>
+	<br>
+	<%= simple_form_for @contact, html: { class: 'form-horizontal' }, url: new_contact_path do |f| %>
+	<%= f.input :name, required: true %>
+	<%= f.input :email, required: true %>
+	<%= f.input :subject, required: true %>
+	<%= f.input :message, as: :text, required: false, input_html: { rows: 15 }, hint: "Max 5000 characters" %>
+	<div class="form-action">
+		<%= f.button :submit, "send message", class: "btn btn-primary" %>
+	</div>
+	<% end %>
+</div>
