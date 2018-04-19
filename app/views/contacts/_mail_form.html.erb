@@ -1,0 +1,9 @@
+	<%= simple_form_for contact, remote: true do |f| %>
+	<%= f.input :name, required: true %>
+	<%= f.input :email, required: true %>
+	<%= f.input :subject, required: true %>
+	<%= f.input :message, as: :text, required: false, input_html: { rows: 15 }, hint: "Max 5000 characters" %>
+	<div class="form-action">
+		<%= f.button :submit, "send message", class: "btn btn-primary" %>
+	</div>
+	<% end %>

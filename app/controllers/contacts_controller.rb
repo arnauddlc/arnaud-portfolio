@@ -9,9 +9,16 @@ class ContactsController < ApplicationController
     if @contact.deliver
       flash.now[:error] = nil
       flash.now[:notice] = 'Thank you for your message!'
+      respond_to do |format|
+      	format.html
+      	format.js
+      end
     else
       flash.now[:error] = 'Cannot send message.'
-      render :new
+      respond_to do |format|
+      	format.html
+      	format.js
+      end
     end
   end
 end
