@@ -1,5 +1,5 @@
 meta_product_name: "Arnaud de La Chaise"
 meta_title: "Arnaud de La Chaise - Independent Consultant"
 meta_description: "Arnaud is an independent Sydney-based Management and Strategy Consultant with more than 6 years of experience in Oil and Gas, FMCG and Retail in various domains."
-meta_image: "arnauddlc_pic.jpg"                       # should exist in `app/assets/images/`
+meta_image: "arnauddlc_ogimage.png"                       # should exist in `app/assets/images/`
 twitter_account: "@tchoupyx"   # required for Twitter Cards
