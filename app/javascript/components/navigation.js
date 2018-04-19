@@ -46,7 +46,12 @@ function listenToClick() {
 function jumpToSection(sectionToNavigateTo) {
 	let sectionText = sectionToNavigateTo.toLowerCase().replace(" ","-");
 	let sectionY = document.getElementById(sectionText).getBoundingClientRect().top;
-	window.scrollTo(0, sectionY + window.scrollY);
+	window.scroll({
+  top: sectionY + window.scrollY, 
+  left: 0, 
+  behavior: 'smooth' 
+});
+	// window.scrollTo(0, sectionY + window.scrollY);
 }
 
 function navigateToSection() {
