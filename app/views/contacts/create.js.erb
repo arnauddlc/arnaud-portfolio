@@ -3,9 +3,16 @@ function refreshForm(innerHTML) {
   contactForm.innerHTML = innerHTML;
 }
 
+function refreshAlert(innerHTML) {
+	const alertArea = document.getElementById('alert-area');
+	alertArea.innerHTML = innerHTML;
+}
+
 <% if @contact.errors.any? %>
   refreshForm('<%= j render "contacts/mail_form", contact: @contact %>');
+  refreshAlert('<%= j render "shared/flashes" %>');
 <% else %>
   refreshForm('<%= j render "contacts/mail_form", contact: Contact.new %>');
+  refreshAlert('<%= j render "shared/flashes" %>');
 <% end %>
 

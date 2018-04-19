@@ -33,8 +33,10 @@
   <body>
     <%= render 'shared/navbar' %>
     <div class="content">
-      <%= render 'shared/flashes' %>
       <%= yield %>
+      <div id="alert-area">
+        <%= render 'shared/flashes' %>
+      </div>
     </div>
     
 	  <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
