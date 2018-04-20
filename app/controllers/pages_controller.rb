@@ -3,6 +3,8 @@ class PagesController < ApplicationController
   	@active_tab = "HOME"
   	@cache = ActiveSupport::Cache.lookup_store(:file_store, '/tmp/cache')
     @contact = Contact.new
+    flash[:alert] = nil
+    flash[:notice] = nil 
   end
 
   def websitesall
