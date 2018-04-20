@@ -6,26 +6,11 @@
 	<div id="contact-form">
 		<%= render 'contacts/mail_form', contact: @contact %>
 	</div>
-	<br>
-	<br>
-	<%= link_to new_contact_path do %>
-		<div class="btn btn-success">Send me a message</div>
-	<% end %>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<%= link_to websitesall_path, remote: true do %>
-		<div class="btn btn-primary loading" id="load-all">Load all external content</div>
-	<% end %>
+  <div id="alert-area">
+    <%= render 'shared/flashes' %>
+  </div>
+
+	<div class="empty-space">	
+	</div>
+	
 </div>

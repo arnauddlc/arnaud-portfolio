@@ -46,6 +46,20 @@ body {
 	}
 }
 
+.empty-space {
+	height: 50vh;
+}
+
+.copyright {
+	text-align: right;
+	padding: 5px 20px;
+  margin-top: 50px;
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+
+
 @media (min-width: 992px) {
 	body {
 		display: flex;

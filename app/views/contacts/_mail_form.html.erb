@@ -4,6 +4,6 @@
 	<%= f.input :subject, required: true %>
 	<%= f.input :message, as: :text, required: false, input_html: { rows: 15 }, hint: "Max 5000 characters" %>
 	<div class="form-action">
-		<%= f.button :submit, "send message", class: "btn btn-primary" %>
+		<%= f.button :submit, "send me a message", class: "btn-send" %>
 	</div>
 	<% end %>
