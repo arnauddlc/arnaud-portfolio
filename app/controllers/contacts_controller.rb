@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
   	@contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      flash[:notice] = "Your message \'#{@contact.subject}\' has been sent!"
+      flash[:notice] = "Your message \'#{@contact.subject}\' has been sent. I will be in touch soon!"
       respond_to do |format|
       	format.html
       	format.js
