@@ -43,6 +43,9 @@ gem 'simple_form'
 # gem for mail form
 gem 'mail_form'
 
+# gem to integrate mailgun settings
+gem 'mailgun-ruby', '~>1.1.6'
+
 # gem to scrape external websites
 gem 'metainspector'
 
