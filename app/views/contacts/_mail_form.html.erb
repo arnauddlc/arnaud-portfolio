@@ -3,6 +3,9 @@
 	<%= f.input :email, required: true %>
 	<%= f.input :subject, required: true %>
 	<%= f.input :message, as: :text, required: false, input_html: { rows: 10 }, hint: "Max 5000 characters" %>
+	<div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+  </div>
 	<div class="form-action">
 		<%= f.button :submit, "send me a message", class: "btn-send" %>
 	</div>

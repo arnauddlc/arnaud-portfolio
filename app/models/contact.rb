@@ -6,6 +6,7 @@ class Contact < MailForm::Base
   attribute :subject,   validate: true
   attribute :message
   validates :message,   length: { in: 30..5000 }
+  attribute :nickname,  :captcha  => true
 
   def headers
     {
