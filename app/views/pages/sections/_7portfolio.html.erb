@@ -1,9 +1,30 @@
 <div class="container" id="portfolio">
 	<h1>portfolio</h1>
 	
-	<p>Placeholders for additional creations - websites and other apps?</p>
+	<p>Here are some of the side projects I have been or am working on (in addition to this webpage)</p>
+	<p><em>Section under construction</em></p>
 	<br>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo beatae, id quos atque quidem blanditiis. Quibusdam exercitationem, soluta sequi explicabo assumenda nulla dolor non numquam. Veritatis odit assumenda pariatur!</p>
-	<p>Aut ab facere molestiae saepe, quibusdam inventore aliquam placeat necessitatibus in porro, nulla incidunt repellat. Error sit deserunt, quasi dignissimos eligendi veritatis adipisci sint debitis ipsa, ullam, eius repellat commodi!</p>
-	<p>Nemo rem aliquam debitis aspernatur soluta, quia nobis harum dicta aliquid fuga commodi suscipit a error et consequuntur asperiores necessitatibus, sunt similique magni in alias molestias ullam! Quasi, fugit, adipisci.</p>
+	
+	<div class="element-card last-card">
+		<div class="card-headlines card-headlines-portfolio">
+			<h2>Waterfall</h2>
+			<div class="corporate_logo">
+				<a href="http://www.wearewaterfall.com" target="blank"><%= image_tag("wearewaterfall.png") %></a>
+			</div>
+			<h4>Side project from Le Wagon</h4>
+			<h4><a href="http://www.wearewaterfall.com", target="blank">www.wearewaterfall.com</a></h4>
+		</div>
+		<div class="card-details">
+			<p>Original project realised with two teammates during Le Wagon's coding bootcamp.</p>
+			<p>Waterfall is designed for people with limited knowledge and experience in Excel or other spreadsheet. It allows user to create impactful and beautiful charts very simply and to export them into their own presentation, including famous "waterfall" charts.</p>
+			<p>Currently working on improving the overall experience and charts types.</p>
+		</div>
+		<div class="card-website" id="wearewaterfall" data-url="https://www.www.wearewaterfall.com/">
+			<div class="card-website-title">Official website</div>
+			<%= link_to website_path(name: "wearewaterfall"), remote: true do %>
+				<div class="loading btn btn-secondary">Click to load data</div>
+			<% end  %>
+		</div>
+	</div>
+
 </div>

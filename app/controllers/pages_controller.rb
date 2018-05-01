@@ -36,12 +36,15 @@ class PagesController < ApplicationController
       ["pernodricard", "https://havana-club.com/en-ww/"],
       ["schlumberger", "https://www.slb.com/"],
       ["vinci", "http://www.vinciconstruction.co.uk/"],
+      ["gendarmerie", "https://www.gendarmerie.interieur.gouv.fr/"],
       # EDUCATION
+      ["lewagon", "https://www.lewagon.com"],
       ["polytechnique", "http://www.polytechnique.edu/en"],
       ["lse", "http://www.lse.ac.uk/"],
       ["jbsay", "http://lyc-jb-say.scola.ac-paris.fr/"],
       # OTHER INTERESTS
-      ["lewagon", "https://www.lewagon.com"],
+      # PORTFOLIO
+      ["wearewaterfall", "http://www.wearewaterfall.com/"]
     ]
   end
 end
