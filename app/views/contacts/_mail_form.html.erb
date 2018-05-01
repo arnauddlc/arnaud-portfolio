@@ -7,6 +7,9 @@
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
   </div>
 	<div class="form-action">
+  	<div id="alert-area">
+    	<%= render 'shared/flashes' %>
+  	</div>
 		<%= f.button :submit, "send me a message", class: "btn-send" %>
 	</div>
 	<% end %>

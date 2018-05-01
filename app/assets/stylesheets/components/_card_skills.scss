@@ -1,6 +1,6 @@
 .card-skill {
 	padding: 5px;
-	height: 300px;
+	height: auto;
 
 	.content-skill{
 		background-color: $dark-gray-transparent;
@@ -31,3 +31,14 @@
 	}
 }
 
+@media (min-width: 768px) {
+	.card-skill{
+		height: 180px;
+	}
+}
+
+@media (min-width: 992px) {
+	.card-skill{
+		height: 300px;
+	}
+}
