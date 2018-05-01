@@ -1,6 +1,29 @@
 <div class="container" id="education">
 	<h1>education</h1>
 
+	<div class="element-card last-card">
+		<div class="card-headlines">
+			<h2>Le Wagon</h2>
+			<h3>Coding Bootcamp</h3>
+			<div class="corporate_logo">
+				<a href="https://www.lewagon.com" target="blank"><%= image_tag("lewagon.jpg") %></a>
+			</div>
+			<h4>Bali, Indonesia</h4>
+			<h4>2018</h4>
+		</div>
+		<div class="card-details">
+			<p>Coding bootcamp</p>
+			<p>Followed Le Wagon's 9-week coding bootcamp. Le Wagon is Europe's leading bootcamp for entrepreneurs, teaching how to build websites' and applications' front and back ends.</p>
+			<p>Ruby and coding basics, Software Engineering (Object-Oriented Programming), Front-End (HTML, CSS, Bootstrap, React), JavaScript, Ruby on Rails, Git, GitHub, Heroku...</p>
+		</div>
+		<div class="card-website" id="lewagon" data-url="http://www.lewagon.com">
+			<div class="card-website-title">Official website</div>
+			<%= link_to website_path(name: "lewagon"), remote: true do %>
+				<div class="loading btn btn-secondary">Click to load data</div>
+			<% end  %>
+		</div>
+	</div>
+
 	<div class="element-card">
 		<div class="card-headlines">
 			<h2>Ecole Polytechnique</h2>
@@ -21,7 +44,6 @@
 			<%= link_to website_path(name: "polytechnique"), remote: true do %>
 				<div class="loading btn btn-secondary">Click to load data</div>
 			<% end  %>
-			<!-- <= render 'pages/sections/corporate_website', url: "http://www.polytechnique.edu/en", name: "polytechnique" %> -->
 		</div>
 	</div>
 
@@ -44,7 +66,6 @@
 			<%= link_to website_path(name: "lse"), remote: true do %>
 				<div class="loading btn btn-secondary">Click to load data</div>
 			<% end  %>
-			<!-- <= render 'pages/sections/corporate_website', url: "http://www.lse.ac.uk/", name: "lse" %> -->
 		</div>
 	</div>
 
@@ -65,7 +86,6 @@
 			<%= link_to website_path(name: "jbsay"), remote: true do %>
 				<div class="loading btn btn-secondary">Click to load data</div>
 			<% end  %>
-			<!-- <= render 'pages/sections/corporate_website', url: "http://lyc-jb-say.scola.ac-paris.fr/", name: "jbsay" %> -->
 		</div>
 	</div>
 </div>

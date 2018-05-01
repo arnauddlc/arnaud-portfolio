@@ -84,7 +84,7 @@
 		</div>
 	</div>
 
-	<div class="element-card last-card">
+	<div class="element-card">
 		<div class="card-headlines">
 			<h2>Financial Modeller</h2>
 			<h3>Vinci Construction UK</h3>
@@ -105,4 +105,30 @@
 			<% end  %>
 		</div>
 	</div>
+
+	<div class="element-card last-card">
+		<div class="card-headlines">
+			<h2>Army Officer (Cadet Leftenant)</h2>
+			<h3>Gendarmerie Nationale (France)</h3>
+			<div class="corporate_logo">
+				<a href="https://www.gendarmerie.interieur.gouv.fr/" target="blank"><%= image_tag("gendarmerienationale.jpg") %></a>
+			</div>
+			<h4>Hyères, France</h4>
+			<h4>September 2006 - Avril 2007</h4>
+		</div>
+		<div class="card-details">
+			<p>Mon Lieutenantt</p>
+			<p>a vos ordres</p>
+		</div>
+		<div class="card-website" id="gendarmerie" data-url="https://www.gendarmerie.interieur.gouv.fr/">
+			<div class="card-website-title">Corporate website</div>
+			<%= link_to website_path(name: "gendarmerie"), remote: true do %>
+				<div class="loading btn btn-secondary">Click to load data</div>
+			<% end  %>
+		</div>
+	</div>
+
+
+
+	<!-- https://www.gendarmerie.interieur.gouv.fr/ -->
 </div>
