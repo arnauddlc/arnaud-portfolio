@@ -1,16 +1,18 @@
 .card-skill {
-	padding: 5px;
+	padding: 10px;
 	height: auto;
+	display: inline-block;
+	width: 100%;
 
 	.content-skill{
 		background-color: $dark-gray-transparent;
-		height: 100%;
+		// height: 100%;
 		border-radius: 3px;
-		display: block;
+		// display: block;
 		padding: 10px;
 		color: $light-gray;
 		opacity: 0.9;
-		overflow: scroll;
+		// overflow: scroll;
 		box-shadow: 2px 2px 9px black;
 
 		&:hover{
@@ -31,14 +33,14 @@
 	}
 }
 
-@media (min-width: 768px) {
-	.card-skill{
-		height: 180px;
-	}
-}
+// @media (min-width: 768px) {
+// 	.card-skill{
+// 		height: 180px;
+// 	}
+// }
 
-@media (min-width: 992px) {
-	.card-skill{
-		height: 300px;
-	}
-}
+// @media (min-width: 992px) {
+// 	.card-skill{
+// 		height: 300px;
+// 	}
+// }
