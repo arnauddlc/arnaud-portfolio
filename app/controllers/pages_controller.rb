@@ -32,7 +32,7 @@ class PagesController < ApplicationController
   def load_urls
     @urls = [
       # EXPERIENCE
-      ["quantium", "http://www.quantium.com"],
+      ["quantium", "https://www.quantium.com"],
       ["woolworths", "https://www.woolworthsgroup.com.au"],
       ["pernodricard", "https://havana-club.com/en-ww/"],
       ["schlumberger", "https://www.slb.com/"],
