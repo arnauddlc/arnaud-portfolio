@@ -58,6 +58,8 @@
 		color: $light-gray;
 		margin-top: 30px;
 		padding: 0;
+		-ms-overflow-style: none;  // IE 10+ hide scroll bar
+  	overflow: -moz-scrollbars-none;  // Firefox hide scroll bar
 			
 		// &:hover {
 		// 	opacity: 1;
@@ -102,6 +104,10 @@
 		.loading {
 			margin-top: 60px;
 		}
+	}
+
+	.card-website::-webkit-scrollbar { 
+	  display: none;  // Safari and Chrome hide scroll bar
 	}
 
 	.loading-wait {
