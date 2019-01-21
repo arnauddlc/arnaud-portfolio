@@ -36,7 +36,7 @@
 .card-headlines {
 	padding: 5px;
 	text-align: center;
-	
+
 	img{
   	max-width:100%;
   	max-height: 110px;
@@ -60,7 +60,7 @@
 		padding: 0;
 		-ms-overflow-style: none;  // IE 10+ hide scroll bar
   	overflow: -moz-scrollbars-none;  // Firefox hide scroll bar
-			
+
 		// &:hover {
 		// 	opacity: 1;
 		// }
@@ -106,7 +106,7 @@
 		}
 	}
 
-	.card-website::-webkit-scrollbar { 
+	.card-website::-webkit-scrollbar {
 	  display: none;  // Safari and Chrome hide scroll bar
 	}
 
@@ -120,7 +120,7 @@
 	.btn {
 		font-size: 12px;
 	}
-	
+
 	.corporate_logo {
 		padding: 5px;
 		background-color: white;
@@ -131,6 +131,7 @@
 		box-shadow: 2px 2px 9px black;
 	}
 
+
 	.last-card {
 		border: none;
 	}
@@ -138,7 +139,7 @@
 
 
 @media (min-width: 992px) {
-	
+
 	.element-card {
 		display: flex;
 		justify-items: space-between;
@@ -164,7 +165,7 @@
 			margin-top: 10px;
 			padding: 0 10px;
 		}
-		
+
 	}
 
 	.corporate_logo {
