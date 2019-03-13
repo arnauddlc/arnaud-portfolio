@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   	@cache = ActiveSupport::Cache.lookup_store(:file_store, '/tmp/cache')
     @contact = Contact.new
     flash[:alert] = nil
-    flash[:notice] = nil 
+    flash[:notice] = nil
   end
 
   def websitesall
@@ -45,7 +45,7 @@ class PagesController < ApplicationController
       ["jbsay", "http://lyc-jb-say.scola.ac-paris.fr/"],
       # OTHER INTERESTS
       # PORTFOLIO
-      ["wearewaterfall", "http://www.wearewaterfall.com/"]
+      ["wearewaterfall", "https://wearewaterfall.herokuapp.com/"]
     ]
   end
 end
